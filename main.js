@@ -145,10 +145,9 @@ function signInChat() {
     username +
     "</span>";
 
- //   function scrollToBottom() {
-  //    var chat = document.getElementById("main");
- //     chat.scrollTop = chat.scrollHeight;
-//  }
+   function scrollToBottom() {
+    window.scrollTo(0, document.body.scrollHeight);
+  }
 
   function sendMessage() {
     //Obter os valores a serem enviados
@@ -175,6 +174,7 @@ function signInChat() {
       sentAt,
       message,
     });
+    scrollToBottom()
   }
 
   //Enviar mensagens a partir do formulário
@@ -183,7 +183,7 @@ function signInChat() {
   messageForm.addEventListener("submit", function (e) {
     e.preventDefault();
     sendMessage();
-   // scrollToBottom();
+   // ;
   });
 
   //Obter referência do nó messages

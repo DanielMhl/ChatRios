@@ -16,8 +16,12 @@ header {
     margin: 0 auto;
     position: fixed; /* Add this line */
     top: 0; /* Add this line to fix it at the top */
-    width: 100%; /* Add this line to make it full width */
+    width: 75%; /* Add this line to make it full width */
     z-index: 1000;
+    border-bottom-left-radius: 10px; /* Round bottom-left corner */
+    border-bottom-right-radius: 10px; /* Round bottom-right corner */
+    left: 50%; /* Center horizontally */
+    transform: translateX(-50%); /* Center horizontally */
 }
 
 
@@ -47,6 +51,7 @@ header {
 }
 
 #chat {
+    margin-top: 50px;
     width: 80%;
     margin: auto;
     padding-bottom: 60px;
@@ -59,6 +64,8 @@ header {
     border-radius: 10px;
     overflow: hidden;
     margin: 20px auto; /* Ajuste as margens conforme necessário */
+    margin-top: 100px;
+    margin-bottom: 100px;
     padding: 20px;
     width: 80%; /* ou a largura que você preferir */
     max-width: 800px; /* ou a largura máxima que você preferir */
@@ -86,16 +93,17 @@ li span {
     font-weight: bold;
     color: #888;
 }
-
 #message-form {
-    text-align: center;
     position: fixed;
-    left: 0;
     bottom: 0;
-    width: 100%;
-    background-color: rgba(255, 255, 255, 0.623); /* Cor de fundo com opacidade */
-    backdrop-filter: blur(10px); /* Efeito de vidro fosco */
+    width: 75%;
+    background-color: #ddedff;
+    color: #fff;
     padding: 15px 0;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    left: 50%;
+    transform: translateX(-50%);
     display: flex;
     align-items: center;
     justify-content: space-around;
@@ -103,7 +111,8 @@ li span {
 }
 
 input {
-    margin: 5px;
+    margin-left: 25px;
+    margin-right: 25px;
     width: 80%;
     height: 38px;
     border: 1px solid #ced4da;
@@ -112,7 +121,7 @@ input {
 }
 
 button {
-    margin-right    : 5 px;
+    margin-right: 5px;
     width: 20%;
     height: 38px;
     border: none;
@@ -121,6 +130,7 @@ button {
     color: #fff;
     cursor: pointer;
 }
+
 
 .sent {
     text-align: right;
@@ -153,3 +163,4 @@ button {
     justify-content: flex-start;
     align-items: center;
 }
+
