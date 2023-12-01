@@ -145,6 +145,11 @@ function signInChat() {
     username +
     "</span>";
 
+ //   function scrollToBottom() {
+  //    var chat = document.getElementById("main");
+ //     chat.scrollTop = chat.scrollHeight;
+//  }
+
   function sendMessage() {
     //Obter os valores a serem enviados
     const messageInput = document.getElementById("message-input");
@@ -178,6 +183,7 @@ function signInChat() {
   messageForm.addEventListener("submit", function (e) {
     e.preventDefault();
     sendMessage();
+   // scrollToBottom();
   });
 
   //Obter referência do nó messages
